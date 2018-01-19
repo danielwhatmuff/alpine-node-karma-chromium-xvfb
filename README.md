@@ -33,7 +33,7 @@ const config = {
 
 ### Run your tests interactively
 ```
-$ docker run -v $(pwd):/mnt -t alpine-node-karma-chromium-xvfb /bin/bash
+$ docker run -v $(pwd):/root/ -t alpine-node-karma-chromium-xvfb /bin/bash
 $ Xvfb :99 -ac -screen 0 1280x720x16 -nolisten tcp &
 $ npm install
 $ npm run test-in-chromium

@@ -13,4 +13,6 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repos
 
 ENV DISPLAY=:99
 
+WORKDIR /root
+
 CMD ["/bin/true"]
