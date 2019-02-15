@@ -1,0 +1,16 @@
+cluster:
+  name: danielwhatmuff3zdc
+
+pipeline:
+  build_container:
+    image: plugins/docker
+    repo: danielwhatmuff/alpine-node-karma-chromium-xvfb
+    tags:
+      - 1.0.0
+    secretFrom:
+      DOCKER_USERNAME:
+        name: docker-hub
+        keyRef: username
+      DOCKER_PASSWORD:
+        name: docker-hub
+        keyRef: password
