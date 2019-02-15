@@ -1,3 +1,6 @@
+cluster:
+  name: danielwhatmuff3zdc
+
 pipeline:
   build_container:
     image: plugins/docker
